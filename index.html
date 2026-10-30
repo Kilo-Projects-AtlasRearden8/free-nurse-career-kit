@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nurse Career Change Freebies Kit — Asdale Dynamics, LLC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --ink: #111827;
+    --muted: #4b5563;
+    --line: #e5e7eb;
+    --accent: #1f6feb;
+    --accent-soft: #eff6ff;
+    --badge: #dbeafe;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+  @media print {
+    html { font-size: 16px; }
+    body { background: #fff; color: #000; }
+    .page { max-width: 100%; padding: 18mm 16mm 20mm; }
+    .no-print, .no-print * { display: none !important; }
+    section { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    table { page-break-inside: auto; }
+    tr { page-break-inside: avoid; }
+    a[href]:after { content: " (" attr(href) ")"; font-size: 80%; color: #666; }
+    a.no-link::after { content: ""; }
+  }
+  header {
+    border-bottom: 4px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 34px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .kit-meta {
+    font-size: 0.95rem;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    background: #f9fafb;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+  h2 {
+    font-size: 1.55rem;
+    margin: 44px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--line);
+  }
+  h3 { font-size: 1.15rem; margin: 26px 0 8px; color: var(--accent); }
+  p { margin: 0 0 12px; }
+  .lead { font-size: 1.05rem; color: #374151; }
+  ul, ol { margin: 6px 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .note {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    margin: 16px 0;
+  }
+  .warning {
+    background: #fef3c7;
+    border-left: 4px solid #d97706;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    margin: 16px 0;
+  }
+
+  /* Skills inventory */
+  table.inventory {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 4px;
+    font-size: 0.98rem;
+  }
+  table.inventory th {
+    text-align: left;
+    background: #f3f4f6;
+    border: 1px solid var(--line);
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  table.inventory td {
+    border: 1px solid var(--line);
+    padding: 12px;
+    vertical-align: top;
+  }
+  table.inventory tr:nth-child(even) td { background: #fafbfc; }
+  .chk {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    accent-color: var(--accent);
+  }
+  .rating {
+    display: inline-flex;
+    gap: 4px;
+  }
+  .rating input { width: 20px; height: 20px; accent-color: var(--accent); }
+
+  /* Resume translation */
+  table.translate {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 4px;
+    font-size: 0.98rem;
+  }
+  table.translate th {
+    text-align: left;
+    background: var(--accent);
+    color: #fff;
+    border: 1px solid var(--accent);
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  table.translate td {
+    border: 1px solid var(--line);
+    padding: 12px;
+    vertical-align: top;
+  }
+  table.translate tr:nth-child(even) td { background: #fafbfc; }
+  .example { font-style: italic; color: var(--muted); font-size: 0.92rem; }
+
+  /* Job tracker */
+  table.tracker {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 4px;
+    font-size: 0.92rem;
+  }
+  table.tracker th {
+    background: #f3f4f6;
+    border: 1px solid var(--line);
+    padding: 9px 10px;
+    text-align: left;
+    font-size: 0.82rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  table.tracker td {
+    border: 1px solid var(--line);
+    padding: 14px 10px;
+    height: 44px;
+    vertical-align: top;
+  }
+  table.tracker tr:nth-child(even) td { background: #fafbfc; }
+  .status-legend span {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    border: 1px solid var(--line);
+  }
+
+  /* Interview prep */
+  .q-block {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0 0 16px;
+    background: #fafafa;
+  }
+  .q-block h4 { margin: 0 0 8px; font-size: 1rem; color: var(--accent); }
+  .q-block p.q { margin: 0 0 10px; }
+  .answer-space {
+    border: 1px dashed var(--line);
+    border-radius: 8px;
+    min-height: 64px;
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+  .star { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .star > div {
+    flex: 1 1 120px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.88rem;
+    background: #fff;
+  }
+  .star b { display: block; color: var(--accent); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+
+  footer {
+    margin-top: 50px;
+    padding-top: 22px;
+    border-top: 2px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .no-print {
+    text-align: center;
+    margin: 30px 0 0;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .btn:hover { opacity: 0.9; }
+  .columns { display: flex; gap: 16px; flex-wrap: wrap; }
+  .col { flex: 1 1 280px; }
+</style>
+</head>
+<body>
+
+<div class="page no-link">
+
+<header>
+  <h1>Nurse Career Change Freebies Kit</h1>
+  <p class="subtitle">Printable worksheets for nurses moving into a new career — bedside to your next role</p>
+  <div class="kit-meta">
+    <strong>Publisher:</strong> Asdale Dynamics, LLC (Indiana, formed October 2026)&nbsp;·&nbsp;<strong>Founder:</strong> Dylan Asdale, RN, AI author<br>
+    <strong>License:</strong> MIT &nbsp;·&nbsp; <strong>Cost:</strong> Free, no account needed &nbsp;·&nbsp; <strong>Format:</strong> Print/PDF from your browser &nbsp;·&nbsp; <strong>Audience:</strong> Education only
+  </div>
+</header>
+
+<p class="lead">Changing careers from nursing is a big move, and your experience is more transferable than it feels on paper. This kit has four printable worksheets: a <strong>skills inventory</strong>, a <strong>resume translation</strong> guide, a <strong>job-application tracker</strong>, and an <strong>interview-prep worksheet</strong>. Print the whole thing or just the pages you need. Large-print friendly — no apps, no logins, no tracking.</p>
+
+<section id="skills">
+  <h2>1 · Skills Inventory</h2>
+  <p>Check the nursing skills you already have, rate your confidence (1 = rusty, 5 = expert), and note how each one translates to work outside healthcare. Blank rows at the bottom are for anything we missed.</p>
+  <table class="inventory">
+    <thead>
+      <tr>
+        <th style="width:4%">Done</th>
+        <th style="width:26%">Nursing skill</th>
+        <th style="width:8%">Confidence (1–5)</th>
+        <th style="width:30%">Translates to…</th>
+        <th style="width:32%">Your example / where you used it</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><input type="checkbox" class="chk"></td><td>Patient assessment &amp; triage</td><td><div class="rating"><input type="radio" name="s1" value="1">1<input type="radio" name="s1" value="2">2<input type="radio" name="s1" value="3">3<input type="radio" name="s1" value="4">4<input type="radio" name="s1" value="5">5</div></td><td>Prioritization, risk assessment, decision-making under pressure</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Medication administration &amp; dosage calculation</td><td><div class="rating"><input type="radio" name="s2" value="1">1<input type="radio" name="s2" value="2">2<input type="radio" name="s2" value="3">3<input type="radio" name="s2" value="4">4<input type="radio" name="s2" value="5">5</div></td><td>Accuracy, attention to detail, protocol compliance</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>IV therapy, wound care, clinical procedures</td><td><div class="rating"><input type="radio" name="s3" value="1">1<input type="radio" name="s3" value="2">2<input type="radio" name="s3" value="3">3<input type="radio" name="s3" value="4">4<input type="radio" name="s3" value="5">5</div></td><td>Technical procedures, hands-on execution, quality standards</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Electronic health record (EHR) documentation</td><td><div class="rating"><input type="radio" name="s4" value="1">1<input type="radio" name="s4" value="2">2<input type="radio" name="s4" value="3">3<input type="radio" name="s4" value="4">4<input type="radio" name="s4" value="5">5</div></td><td>Data entry, CRM/database management, compliant record-keeping</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Patient education &amp; discharge teaching</td><td><div class="rating"><input type="radio" name="s5" value="1">1<input type="radio" name="s5" value="2">2<input type="radio" name="s5" value="3">3<input type="radio" name="s5" value="4">4<input type="radio" name="s5" value="5">5</div></td><td>Technical writing, training, customer success, onboarding</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Care coordination &amp; discharge planning</td><td><div class="rating"><input type="radio" name="s6" value="1">1<input type="radio" name="s6" value="2">2<input type="radio" name="s6" value="3">3<input type="radio" name="s6" value="4">4<input type="radio" name="s6" value="5">5</div></td><td>Project management, stakeholder coordination, logistics</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Shift leadership / charge nurse</td><td><div class="rating"><input type="radio" name="s7" value="1">1<input type="radio" name="s7" value="2">2<input type="radio" name="s7" value="3">3<input type="radio" name="s7" value="4">4<input type="radio" name="s7" value="5">5</div></td><td>Team leadership, delegation, scheduling, operations</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Crisis response (codes, rapid response, emergencies)</td><td><div class="rating"><input type="radio" name="s8" value="1">1<input type="radio" name="s8" value="2">2<input type="radio" name="s8" value="3">3<input type="radio" name="s8" value="4">4<input type="radio" name="s8" value="5">5</div></td><td>Incident response, escalation, calm under tight deadlines</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Patient advocacy &amp; family communication</td><td><div class="rating"><input type="radio" name="s9" value="1">1<input type="radio" name="s9" value="2">2<input type="radio" name="s9" value="3">3<input type="radio" name="s9" value="4">4<input type="radio" name="s9" value="5">5</div></td><td>Stakeholder management, conflict resolution, communication</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Infection control &amp; safety compliance</td><td><div class="rating"><input type="radio" name="s10" value="1">1<input type="radio" name="s10" value="2">2<input type="radio" name="s10" value="3">3<input type="radio" name="s10" value="4">4<input type="radio" name="s10" value="5">5</div></td><td>Compliance, auditing, risk management, OSHA/safety culture</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Precepting / mentoring new staff</td><td><div class="rating"><input type="radio" name="s11" value="1">1<input type="radio" name="s11" value="2">2<input type="radio" name="s11" value="3">3<input type="radio" name="s11" value="4">4<input type="radio" name="s11" value="5">5</div></td><td>Training &amp; development, coaching, mentoring programs</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Interdisciplinary collaboration (physicians, PT, pharmacy, SW)</td><td><div class="rating"><input type="radio" name="s12" value="1">1<input type="radio" name="s12" value="2">2<input type="radio" name="s12" value="3">3<input type="radio" name="s12" value="4">4<input type="radio" name="s12" value="5">5</div></td><td>Cross-functional teamwork, liaison work, negotiation</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Time management on a full patient load</td><td><div class="rating"><input type="radio" name="s13" value="1">1<input type="radio" name="s13" value="2">2<input type="radio" name="s13" value="3">3<input type="radio" name="s13" value="4">4<input type="radio" name="s13" value="5">5</div></td><td>Workflow optimization, productivity, multitasking</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td>Healthcare technology (monitors, pumps, telehealth platforms)</td><td><div class="rating"><input type="radio" name="s14" value="1">1<input type="radio" name="s14" value="2">2<input type="radio" name="s14" value="3">3<input type="radio" name="s14" value="4">4<input type="radio" name="s14" value="5">5</div></td><td>Software/tool adoption, technical troubleshooting, SaaS fluency</td><td></td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td colspan="4">Your own skill (add anything from nursing or outside work): ______________________________________</td></tr>
+      <tr><td><input type="checkbox" class="chk"></td><td colspan="4">Your own skill: ________________________________________________________</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Tip: circle your top 5–7 transferable skills. Those become the core of your new resume and your interview stories.</p>
+</section>
+
+<section id="resume">
+  <h2>2 · Resume Translation: Nursing-Speak → Plain English</h2>
+  <p>Employers outside healthcare don't always know what a "med-surg ratio" or a "code blue" means in business terms. Translate your experience into outcomes they recognize: accuracy, deadlines, people, and systems.</p>
+  <table class="translate">
+    <thead>
+      <tr><th style="width:34%">Nursing-speak (what you did)</th><th style="width:33%">Plain English / resume language</th><th style="width:33%">Example bullet you can adapt</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Managed a med-surg floor, 6:1 patient ratio</td>
+        <td>Prioritized competing workloads across multiple simultaneous accounts</td>
+        <td class="example">"Prioritized and safely managed caseloads of up to 6 concurrent accounts; maintained 100% documentation accuracy during 12-hour shifts."</td>
+      </tr>
+      <tr>
+        <td>Administered medications and IV therapies</td>
+        <td>Executed regulated protocols with precision under strict compliance rules</td>
+        <td class="example">"Administered precise, protocol-governed treatments with zero documentation errors across 500+ patient encounters."</td>
+      </tr>
+      <tr>
+        <td>EHR charting and documentation</td>
+        <td>Maintained compliant records in electronic systems of record</td>
+        <td class="example">"Maintained accurate, audit-ready records in electronic health record system serving a 30-bed unit."</td>
+      </tr>
+      <tr>
+        <td>Code blue / rapid response</td>
+        <td>Crisis escalation and incident response under tight deadlines</td>
+        <td class="example">"Led emergency escalations during codes; coordinated multi-person response under pressure to stabilize critical situations."</td>
+      </tr>
+      <tr>
+        <td>Preceptor to new grads and float staff</td>
+        <td>Onboarded, trained, and mentored new team members</td>
+        <td class="example">"Precepted 8 new hires; developed onboarding checklists that cut ramp-up time by an estimated 20%."</td>
+      </tr>
+      <tr>
+        <td>Patient and family advocacy</td>
+        <td>Stakeholder management, communication, and conflict resolution</td>
+        <td class="example">"Advocated for patients and families; resolved concerns by translating complex information into plain-language action plans."</td>
+      </tr>
+      <tr>
+        <td>Care coordination across departments</td>
+        <td>Cross-functional coordination and vendor/stakeholder liaison</td>
+        <td class="example">"Coordinated discharge plans across physicians, pharmacy, PT, and social work to reduce delays and improve outcomes."</td>
+      </tr>
+      <tr>
+        <td>Infection control and safety compliance</td>
+        <td>Compliance auditing and risk-mitigation procedures</td>
+        <td class="example">"Implemented infection-control protocols; audited unit compliance and retrained staff on safety standards."</td>
+      </tr>
+      <tr>
+        <td colspan="3">Translate your own experience — fill this in for your top 3 skills from Section 1:</td>
+      </tr>
+      <tr>
+        <td>Nursing-speak: ___________________________________________</td>
+        <td>Plain English: ____________________________________________</td>
+        <td>Resume bullet: _____________________________________________</td>
+      </tr>
+      <tr>
+        <td>Nursing-speak: ___________________________________________</td>
+        <td>Plain English: ____________________________________________</td>
+        <td>Resume bullet: _____________________________________________</td>
+      </tr>
+      <tr>
+        <td>Nursing-speak: ___________________________________________</td>
+        <td>Plain English: ____________________________________________</td>
+        <td>Resume bullet: _____________________________________________</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Quick resume tips</h3>
+  <ul>
+    <li>Drop medical jargon. Say "accounts," "projects," "systems," "stakeholders," and "outcomes" instead of unit-specific terms.</li>
+    <li>Lead with results, not duties: "reduced," "trained," "coordinated," "maintained," "resolved."</li>
+    <li>Add one numbers line where you can (patients per shift, staff trained, years of experience, error-free record rate).</li>
+    <li>Keep a "master resume" with everything; copy-paste the relevant pieces for each application.</li>
+  </ul>
+</section>
+
+<section id="tracker">
+  <h2>3 · Job Application Tracker</h2>
+  <p>One row per application. Print extra copies of this page as you go. Review it weekly — follow up on anything older than 7–10 days with no update.</p>
+  <table class="tracker">
+    <thead>
+      <tr>
+        <th style="width:9%">Date applied</th>
+        <th style="width:16%">Company</th>
+        <th style="width:14%">Role / title</th>
+        <th style="width:11%">Source (Indeed, LinkedIn, referral…)</th>
+        <th style="width:11%">Contact / hiring manager</th>
+        <th style="width:10%">Follow-up due</th>
+        <th style="width:13%">Status</th>
+        <th style="width:16%">Notes / next step</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="status-legend">
+    <span>Applied</span>
+    <span>Screening</span>
+    <span>Interviewing</span>
+    <span>Offer</span>
+    <span>Rejected / no response</span>
+    <span>Withdrawn</span>
+  </div>
+  <div class="columns" style="margin-top:18px">
+    <div class="col">
+      <h3>Weekly goal</h3>
+      <p>Applications this week: _____ &nbsp;·&nbsp; Interviews this week: _____ &nbsp;·&nbsp; Follow-ups sent: _____</p>
+      <p>Target next week: _____ applications</p>
+    </div>
+    <div class="col">
+      <h3>Contacts to nurture</h3>
+      <p>Name ____________________ Role ____________________ Last touched __________</p>
+      <p>Name ____________________ Role ____________________ Last touched __________</p>
+    </div>
+  </div>
+</section>
+
+<section id="interview">
+  <h2>4 · Interview Prep Worksheet</h2>
+  <p>Write out short answers in the spaces below. Use the STAR method for stories: <b>S</b>ituation, <b>T</b>ask, <b>A</b>ction, <b>R</b>esult. Say answers out loud before the interview.</p>
+
+  <div class="q-block">
+    <h4>Tell me about yourself / why are you leaving nursing?</h4>
+    <p class="q">Keep it to 60–90 seconds. Name your background, your transferable strengths, and why this role fits — one line on why you're leaving (keep it positive, never negative about patients or employers).</p>
+    <div class="answer-space"></div>
+  </div>
+
+  <div class="q-block">
+    <h4>Why this role / this company?</h4>
+    <p class="q">Connect 2–3 of your inventoried skills to what the job actually needs.</p>
+    <div class="answer-space"></div>
+  </div>
+
+  <div class="q-block">
+    <h4>Tell me about a time you handled a difficult situation.</h4>
+    <p class="q">Use STAR: Situation, Task, Action, Result. A code blue, a hard discharge, or a conflict with a family member all work.</p>
+    <div class="star">
+      <div><b>Situation</b><div class="answer-space" style="min-height:52px"></div></div>
+      <div><b>Task</b><div class="answer-space" style="min-height:52px"></div></div>
+      <div><b>Action</b><div class="answer-space" style="min-height:52px"></div></div>
+      <div><b>Result</b><div class="answer-space" style="min-height:52px"></div></div>
+    </div>
+  </div>
+
+  <div class="q-block">
+    <h4>What are your greatest strengths?</h4>
+    <p class="q">Pick 2–3 from your skills inventory and back each with a one-sentence example.</p>
+    <div class="answer-space"></div>
+  </div>
+
+  <div class="q-block">
+    <h4>What are your salary expectations?</h4>
+    <p class="q">Research the range first. It's okay to say: "Based on the role and my experience, I'm targeting $____–$____, and I'm open to discussing the full package."</p>
+    <div class="answer-space"></div>
+  </div>
+
+  <div class="q-block">
+    <h4>Questions to ask them</h4>
+    <p class="q">Always have 2–3 ready. Examples: What does success look like in the first 90 days? How does the team collaborate? What's the biggest challenge the hire will tackle first?</p>
+    <div class="answer-space"></div>
+  </div>
+
+  <h3>Post-interview thank-you (template)</h3>
+  <div style="border:1px solid var(--line); border-radius:8px; padding:14px 18px; background:#fafafa; font-size:0.95rem; white-space:pre-wrap; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+Subject: Thank you — [Role] interview
+
+Hi [Interviewer name],
+
+Thank you for speaking with me today about the [role] role at [company]. I enjoyed learning about [one specific thing you discussed] and was glad to share how my background in nursing — prioritization, crisis response, and stakeholder communication — maps to what your team needs.
+
+I'm very interested in moving forward. Please let me know if anything else would be helpful from my side.
+
+Best,
+[Your name]
+[Phone] · [Email]
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Asdale Dynamics, LLC. All rights in this kit are licensed under the MIT License — see LICENSE.</p>
+  <p><strong>Education only.</strong> This kit provides general career-transition information. It is not medical advice, career counseling, legal advice, or a guarantee of employment. No account is required to use it, and no personal data is collected or stored. If you need personalized guidance, speak with a qualified career professional.</p>
+  <p>Asdale Dynamics, LLC · Indiana · dylanasdale.github.io · Beginner-friendly AI education, books, and practical tools.</p>
+</footer>
+
+<div class="no-print">
+  <p>Print this page (Ctrl+P / Cmd+P), choose "Save as PDF" or your printer, and disable headers/footers if you want a clean worksheet.</p>
+  <a class="btn" href="#" onclick="window.print(); return false;">Print / Save PDF</a>
+</div>
+
+</div>
+</body>
+</html>
